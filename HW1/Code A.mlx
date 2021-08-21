@@ -1,0 +1,120 @@
+%matrix input 1 
+mat1 = readmatrix('matA.txt');
+
+%matrix input 2
+mat2 = readmatrix('matA.txt');
+
+dim1 = size(mat1);       %dimension of matrix 1 
+dim2 = size(mat2);       %dimension of matrix 2 
+
+%Check whether matrix are multiplicable  if not it will return to command
+if dim1(2) == dim2(1)
+    disp("Yes the the matrix are multiplicable");
+else
+    disp('Matrix is not multiplicable');
+    keyboard; 
+end
+
+%Creating a ans matrix of length of rows of mat1 x length of column of mat2
+A_square = zeros(dim1(1),dim2(2));
+
+%Running the loop to with the basic arithmatic logic to multiply two matrices 
+for i = 1:dim1(1)
+    for k = 1:dim2(2)
+        temp = 0 ; 
+        for l = 1:dim2(1)
+            temp  = temp + mat1(i,l)*mat2(l,k);
+        end
+        A_square(i,k) = temp;
+     end
+end
+A_square;
+
+%Checking with the inbuilt matrix function 
+mat_inbuilt = mat1*mat2;
+
+% to determine any error in my calculation and inbuilt cal.
+error = mat_inbuilt - A_square;
+
+
+
+
+
+%Code for A cube 
+
+%Same code will be repeated by taking mat = A_square 
+mat1 = A_square;
+
+dim1 = size(mat1);       %dimension of matrix 1 
+dim2 = size(mat2);       %dimension of matrix 2 
+
+%Check whether matrix are multiplicable  if not it will return to command
+if dim1(2) == dim2(1)
+    disp("Yes the the matrix are multiplicable");
+else
+    disp('Matrix is not multiplicable');
+    keyboard; 
+end
+
+% Creating a ans matrix of length of rows of mat1 x length of column of mat2
+A_cube = zeros(dim1(1),dim2(2));
+
+%Running the loop to with the basic arithmatic logic to multiply two matrices 
+for i = 1:dim1(1)
+    for k = 1:dim2(2)
+        temp = 0 ; 
+        for l = 1:dim2(1)
+            temp  = temp + mat1(i,l)*mat2(l,k);
+        end
+        A_cube(i,k) = temp;
+     end
+end
+A_cube;
+
+%Checking with the inbuilt matrix function 
+mat_inbuilt = mat1*mat2;
+
+%to determine any error in my calculation and inbuilt cal.
+error = mat_inbuilt - A_cube 
+
+
+
+
+
+%Code for A to power 4
+%Again same code will be repeated by taking mat1 and mat2 as A_square 
+
+mat1 = A_square;
+mat2 = A_square;
+
+dim1 = size(mat1);       %dimension of matrix 1 
+dim2 = size(mat2);       %dimension of matrix 2 
+
+%Check whether matrix are multiplicable  if not it will return to command
+if dim1(2) == dim2(1)
+    disp("Yes the the matrix are multiplicable")
+else
+    disp('Matrix is not multiplicable')
+    keyboard; 
+end
+
+% Creating a ans matrix of length of rows of mat1 x length of column of mat2
+A_4 = zeros(dim1(1),dim2(2));
+
+%Running the loop to with the basic arithmatic logic to multiply two matrices 
+for i = 1:dim1(1)
+    for k = 1:dim2(2)
+        temp = 0 ; 
+        for l = 1:dim2(1)
+            temp  = temp + mat1(i,l)*mat2(l,k);
+        end
+        A_4(i,k) = temp;
+     end
+end
+A_4;
+
+%Checking with the inbuilt matrix function 
+mat_inbuilt = mat1*mat2;
+
+% to determine any error in my calculation and inbuilt cal.
+error = mat_inbuilt - A_4 
