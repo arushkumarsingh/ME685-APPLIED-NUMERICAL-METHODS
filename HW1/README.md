@@ -4,4 +4,4 @@ We are giving two matrix input .txt file, remember we are multiplying mat1 x mat
 
 "Initial code.m" is the basic matrix multiplication for C = A*B
 
-"A code.m" is the file for operations with given matrix A. 
+"Code A.m" is the file for operations with given matrix A. 
