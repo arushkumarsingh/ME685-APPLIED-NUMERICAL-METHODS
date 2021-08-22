@@ -7,8 +7,11 @@ Write a computer program for the naive Gaussian elimination.
 Use the program to solve
 
 4x + 1y + 1z + 1w = 7 
+
 1x + 4y + 1z + 1w = 7
+
 1x + 1y + 4z + 1w = 7
+
 1x + 1y + 1z + 4w = 7
 
 
