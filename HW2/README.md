@@ -4,52 +4,12 @@ where Ax = b
 
 Write a computer program for the naive Gaussian elimination.
 
-
 Use the program to solve
-
-
-
-
-
-4 1 1 1
-1 4 1 1
-1 1 4 1
-1 1 1 4
-
-
-
-
-
-
-
-
-
-
-x1
-x2
-x3
-x4
-
-
-
-
-
-=
-
-
-
-
-
-7
-7
-7
-7
-
-
-
-
 
-
+4x + 1y + 1z + 1w = 7 
+1x + 4y + 1z + 1w = 7
+1x + 1y + 4z + 1w = 7
+1x + 1y + 1z + 4w = 7
 
 
 1. This code is written in python3, in ".ipnyb" format, run it in jupyter notebook or google collab 
