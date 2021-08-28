@@ -1,7 +1,4 @@
-%Name: Arush Kumar Singh
-%Roll no: 190182
-
-%The function for solving to solve the algebric equation using Newton-Raphson method 
+%The function for solving the algebric equation using Newton-Raphson method 
 %Inputs are the main function, differentiaion function, guess value and the maximum error
 
 function Sol = NewRap(eqn,diff,guess,max_error) 
