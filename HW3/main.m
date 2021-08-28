@@ -1,6 +1,3 @@
-%Name: Arush Kumar SIngh
-%Roll no : 190182
-
 %This is the main file run you code from here
 
 %input equation
