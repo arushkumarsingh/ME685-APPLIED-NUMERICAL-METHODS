@@ -2,9 +2,9 @@
 
 Q:  Find the maximum (in absolute value) and minimum (in absolute value) eigenvalues of the Leslie matrix
 
-L =  [[0, 2.3, 0.4];
-      [0.6, 0, 0];
-      [0, 0.3, 0]]
+L =  [0, 2.3, 0.4;
+      0.6, 0, 0;
+      0, 0.3, 0]
 
 HW-5
 
