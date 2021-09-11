@@ -1,22 +1,10 @@
-package main
 
-import (
-  "github.com/oelmekki/matrix"
-  "fmt"
-)
-
-func main() {
-  firstMatrix, _ := matrix.Build(
-    matrix.Builder {
-      matrix.Row{  10, -5.3,  22   },
-      matrix.Row{  -2, -25,   12   },
-      matrix.Row{   7,  5,   -12.5 },
-    },
-  )
 
 Q:  Find the maximum (in absolute value) and minimum (in absolute value) eigenvalues of the Leslie matrix
 
-L = 
+L =  [0, 2.3, 0.4
+      0.6, 0, 0
+      0, 0.3, 0]
 
 HW-5
 
